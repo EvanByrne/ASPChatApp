@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private Button reg;
+    protected Button reg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

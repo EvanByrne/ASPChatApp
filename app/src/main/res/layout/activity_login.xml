@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backg"
+    android:background="@drawable/hackg4"
     tools:context=".LoginActivity">
 
     <TextView
         android:id="@+id/txtVlogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
         android:text="@string/login_here"
-        android:textColor="@android:color/holo_blue_bright"
+        android:textColor="@android:color/holo_green_light"
         android:textSize="30sp" />
 
     <Button
@@ -23,7 +24,64 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="14dp"
-        android:background="@android:color/darker_gray"
+        android:background="@android:color/holo_blue_dark"
         android:text="@string/no_account_click_me"
-        android:textColor="@android:color/holo_blue_dark" />
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:id="@+id/txtInpLogName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="179dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="@string/email_login"
+        android:inputType="textMultiLine|textEmailAddress"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="@string/password_login"
+        android:inputType="textMultiLine|textPassword"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="174dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/sign_in"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtClickForgotDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="129dp"
+        android:clickable="true"
+        android:text="@string/forgot_password_click_here"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:focusable="true" />
 </RelativeLayout>
