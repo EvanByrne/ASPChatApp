@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">ASP Chat App</string>
     <string name="logo">logo</string>
+    <string name="login_here">Login here</string>
+    <string name="no_account_click_me">No Account? Click Me</string>
+    <string name="register_page">Register Page</string>
 </resources>

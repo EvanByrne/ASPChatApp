@@ -34,4 +34,11 @@ public class StartActivity extends AppCompatActivity {
         };
         thread.start();
     }
+    @Override
+    protected void onPause()
+    {
+        super.onPause();
+
+        finish();
+    }
 }
