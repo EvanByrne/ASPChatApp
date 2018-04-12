@@ -46,7 +46,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/txtInpLogPass"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"

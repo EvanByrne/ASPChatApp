@@ -7,9 +7,13 @@ import android.os.Bundle;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import android.support.v7.widget.Toolbar;
+
 public class MainActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
+
+    private Toolbar mToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +21,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mAuth = FirebaseAuth.getInstance();
+
+        mToolbar = findViewById(R.id.main_toolbar);
+        setSupportActionBar(mToolbar);
+        if(getSupportActionBar() != null){
+            getSupportActionBar().setTitle("Secure Chat");
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+        //getSupportActionBar().setTitle("Secure Chat");
     }
 
     @Override

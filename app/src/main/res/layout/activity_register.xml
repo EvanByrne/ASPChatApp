@@ -22,7 +22,7 @@
         android:textSize="30sp" />
 
     <EditText
-        android:id="@+id/txtInpName"
+        android:id="@+id/txtInpRegName"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -31,26 +31,32 @@
         android:background="@android:color/background_light"
         android:ems="10"
         android:hint="@string/name"
-        android:inputType="textMultiLine|textPersonName"
+        android:inputType="textPersonName"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
         android:textColor="@android:color/holo_green_light"
         android:textSize="24sp"
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/txtInpEmail"
+        android:id="@+id/txtInpRegEmail"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:background="@android:color/background_light"
         android:ems="10"
         android:hint="@string/email"
-        android:inputType="textMultiLine|textEmailAddress"
+        android:inputType="textEmailAddress"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
         android:textColor="@android:color/holo_green_light"
         android:textSize="24sp"
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/txtInpPassword"
+        android:id="@+id/txtInpRegPassword"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -59,13 +65,16 @@
         android:background="@android:color/background_light"
         android:ems="10"
         android:hint="@string/password"
-        android:inputType="textMultiLine|textPassword"
+        android:inputType="textPassword"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
         android:textColor="@android:color/holo_green_light"
         android:textSize="24sp"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/btnReg"
+        android:id="@+id/btnRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
